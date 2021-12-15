@@ -16,6 +16,10 @@ def app():
     """)
     sc = Image.open("images/scraping.png")
     st.image(sc, use_column_width=True)
+    st.write("""
+    Nos descargamos las características de cada uno de los perretes y después limpiamos y profundizamos los datos. Creamos categorías como "Comportamiento", "Características físicas" o "Capacidad de adaptación" para segregar la información.
+    """)
+    
 
 
     
@@ -25,6 +29,9 @@ def app():
     """)
     cluster = Image.open("images/clusters_2.png")
     st.image(cluster, use_column_width=True)
+    st.write("""
+    Tras varios intentos, la mejor silueta de la obteníamos con 3 clusters (habiendo hecho PCA).
+    """)
 
 
 
@@ -34,6 +41,9 @@ def app():
     """) 
     grafico = Image.open("images/criterios_elegidos.png")
     st.image(grafico, use_column_width=True)
+    st.write("""
+    Finalmente, detectamos aquellos criterios esenciales para asegurar el éxito de la convivencia con su nueva familia familia.
+    """)
 
 
 

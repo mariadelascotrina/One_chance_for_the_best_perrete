@@ -12,7 +12,7 @@ def app():
 
     st.write("""
     # Dale una chance al perrete
-    Son muchos los perros que sufren abandono a lo largo del año, por eso, para garantizar el éxito de la relación con su nueva familia, hemos desarrollado esta perreapp
+    Son muchos los perros que sufren abandono a lo largo del año, por eso, para garantizar el éxito de la relación con su nueva familia, hemos desarrollado el * Perrinder *
 
  
 

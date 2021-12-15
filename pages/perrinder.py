@@ -8,10 +8,11 @@ from bs4 import BeautifulSoup
 
 def app():
 
-    
+    perri = Image.open("images/perrinder2.png")
+    st.image(perri, use_column_width=True)
+
     st.write("""
-    # Perrinder:
-    ## Haz *match* con tu perrete
+   ## Haz *match* con tu perrete
     """)
 
     data = dat.cargadata()
@@ -21,10 +22,9 @@ def app():
 
     input_size = ["Elige" , "Grande", "Mediano", "Pequeño"]
 
-    size = st.selectbox("¿De qué tamaño te gustaría adoptar tu pero?", input_size)
+    size = st.selectbox("¿De qué tamaño te gustaría adoptar tu perro?", input_size)
     if size == "Elige":
         st.stop()
-    
     
 
     input_alergia = ["Elige", "Sí", "No"]
@@ -95,8 +95,11 @@ def app():
         No hemos podido encontrar perretes con estas características
         """)
     else:
+        
         st.write(f"""
         ###  {str(perro.head(1).Name.unique())[2:-2]}  
+
+
           
         """) 
 
@@ -105,7 +108,7 @@ def app():
         
 
         st.write(f"""
-        Tu match especial, el {str(perro.head(1).Name.unique())[2:-2]} se define por tener estas características: 
+        Tu match especial, el {str(perro.head(1).Name.unique())[2:-2]} se define por estas características: 
         """) 
 
         #formular perro
@@ -216,7 +219,7 @@ def app():
 
 
 
-    ### Por si te queda alguna duda
+    ### Por si quieres valorar otros perretes con características parecidas
     """)
 
     try:
