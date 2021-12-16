@@ -7,8 +7,8 @@ from pages import perrinder
 
 app = MultiPage()
 
-app.add_page("Index", home.app)
-app.add_page("Análisis", analysis.app)
-app.add_page("Perrinder", perrinder.app)
+app.add_page("¿Por qué?", home.app)
+app.add_page("¿Cómo?", analysis.app)
+app.add_page("¿Qué?", perrinder.app)
 
 app.run()

@@ -10,9 +10,11 @@ def app():
 
     perri = Image.open("images/perrinder2.png")
     st.image(perri, use_column_width=True)
+    st.sidebar.image("images/Therojo.png", use_column_width=True)
 
     st.write("""
-   ## Haz *match* con tu perrete
+    # ¿Qué?
+    ## Haz *match* con tu perrete
     """)
 
     data = dat.cargadata()
@@ -46,6 +48,12 @@ def app():
     perros_otro = st.selectbox("¿Tienes ya otro perro? ", input_perros_otro)
     if perros_otro == "Elige":
             st.stop()
+
+    input_viajar  = ["Elige", "Sí", "No"]
+    perros_viajero = st.selectbox("¿Te gusta viajar? ", input_viajar)
+    if perros_viajero == "Elige":
+            st.stop()
+
 
     #formula
 
@@ -85,7 +93,17 @@ def app():
         otro = [4,5]
     else:
         otro = [1,2,3,4,5]        
-    perro = nino[nino['Dog Friendly'].isin(otro)]
+    otrete = nino[nino['Dog Friendly'].isin(otro)]
+
+    if perros_viajero == "Sí":
+        via = [4,5]
+    else:
+        via = [1,2,3,4,5]        
+    perro = otrete[otrete['Wanderlust Potential'].isin(via)]
+
+
+    # 'Wanderlust Potential'
+
 
     st.write("""
     ## Primeras sugerencias:
