@@ -12,7 +12,7 @@ def app():
 
     1. Webb Scraping & limpieza
     2. Clusterización
-    3. Elección de criterios para la recomendación
+    3. Elección de criterios
     
 
 
@@ -59,7 +59,7 @@ def app():
 
 
     st.write("""
-    ### 3. Los criterios finales 
+    ### 3. Elección de criterios 
     """) 
     grafico = Image.open("images/criterios_elegidos.png")
     st.image(grafico, use_column_width=True)
