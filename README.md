@@ -14,7 +14,7 @@ A través de metodologías de Machine Learning, dividimos en grupos de perros pa
 Tras profundizar en las características de los perros, elegimos 5 características fundamentales para la convivencia.
 
 ### ¿Qué es perrinder?
-Perrinder es un sistema de recomendación de perros teniendo en cuenta aspectos comportamentales y físicos de los canes. 
+Perrinder es un sistema de recomendación de perros teniendo en cuenta aspectos comportamentales y físicos de los canes: Tamaño, Propensión o no a generar alergia
 
 
 
